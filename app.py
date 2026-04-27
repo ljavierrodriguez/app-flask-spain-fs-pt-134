@@ -1,6 +1,7 @@
 from config import Config
 from flask import Flask, jsonify
 from flask_migrate import Migrate
+from flask_jwt_extended import JWTManager
 from flask_cors import CORS
 from models import db
 from routes import api
@@ -13,6 +14,7 @@ CORS(app)
 # Configuracion con la base de datos (models)
 db.init_app(app)
 Migrate(app, db)
+jwt = JWTManager(app)
 
 """
 Comandos Habilitados con Migrate

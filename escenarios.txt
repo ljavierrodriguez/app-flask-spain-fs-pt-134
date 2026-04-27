@@ -1,0 +1,10 @@
+Escenarios comunes
+Aplicaciones web (React, Vue, Angular)
+    Access Token: 15 minutos
+    Refresh Token: 30 días
+Aplicaciones bancarias o alta seguridad
+    Access Token: 5 minutos
+    Refresh Token: 1 día
+Aplicaciones móviles
+    Access Token: 30 minutos
+    Refresh Token: 60-90 días
